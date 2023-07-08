@@ -1,0 +1,83 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #bcfea0;
+  background-color: #0b1c16;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --navbar-background: #05160d;
+  --primary: #299932;
+  --secondary: #535c7e;
+  --text: #333745;
+  --contrast: #00c35b;
+  --alert: #d00000;
+  --secondary-background: #52cb9d;
+}
+
+a {
+  font-weight: 500;
+  color: #097a47;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #00c35b;
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #297459;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--contrast);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    
+    --navbar-background: #73c376;
+    --primary: #115f35;
+    color: #26714f;
+    background-color: hsl(113, 61%, 82%);
+  }
+  a:hover {
+    color: #008148;
+  }
+  button {
+    background-color: #00c35b;
+  }
+}
